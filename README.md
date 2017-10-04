@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
-In order to make this project work you need to enter your API key in the service. 
-
 A running version of this project can be used in http://movie-viewer.herokuapp.com/
+
+## How to build
+
+- Clone this repo.
+- Run `npm i`.
+- Enter your api key in `src/app/the-movie-database.service.ts`.
+- If you want to run the app, run `ng serve`.
+- If you want to test the app, run `ng test`.
 
 ## Development server
 
