@@ -1,0 +1,14 @@
+.movie-detail-image {
+  height: 375px;
+  width: 250px;
+  float: left;
+}
+
+.content {
+  float: left;
+  margin-left: 25px;
+}
+
+.filled {
+  color: gold;
+}

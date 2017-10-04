@@ -1,0 +1,4 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let movie of (movies | async)" (click)="selectMovie(movie)"
+      [ngClass]="{'selected': (selectedMovie | async) === movie}">{{(movie).title}}</li>
+</ul>

@@ -1,0 +1,13 @@
+<div *ngIf="(movie | async).title !== ''" class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{(movie | async).imageURL}}" class="movie-detail-image">
+    </div>
+    <div class="col-md-9">
+      <h1>{{(movie | async).title}}</h1>
+      <p>{{(movie | async).overview}}</p>
+      <i class="fa" *ngFor="let i of [1, 2, 3, 4, 5]"
+         [ngClass]="{'filled fa-star': (movie | async).popularity >= 2 * i, 'fa-star-o': (movie | async).popularity < 2 * i}"></i>
+    </div>
+  </div>
+</div>
